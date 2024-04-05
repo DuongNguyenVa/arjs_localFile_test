@@ -48,7 +48,7 @@
 
         var  mask = document.getElementById("mask");
         
-        mask.style.display = "none";
+        // mask.style.display = "none";
     }    
    })
    this.el.sceneEl.addEventListener('markerLost', (e) => { 
@@ -56,23 +56,32 @@
     console.log("Lost");
     var  mask = document.getElementById("mask");
         
-        mask.style.display = "block";
+        // mask.style.display = "block";
   })
  }
 });
 </script>
 <body style='margin : 0px; overflow: hidden;'>
+    <video width="240" height="240" loop autoplay>
+        <source src="./data/videos/kb_video.mp4" type="video/mp4">
+      </video>
   <div class="arjs-loader">
-    <div>Loading camera, please wait...</div>   
+    <div>Loading camera, please wait...</div>      
   </div> 
+ 
+ <video width="320" height="240" loop autoplay dislay="block">
+                <source src="./data/videos/kb_video.mp4" type="video/mp4">
+              </video>
     <a-scene
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true; precision: medium;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>  
         
          <!-- <img id="mask" class="mask" alt="girl">     -->
-         <img id="mask" class="mask" src="./data/images/kb1.png" alt="girl">    
+         <!-- <img id="mask" class="mask" src="./data/images/kb1.png" alt="girl">     --> 
+
         
+          
 <!-- kb1 -->
         <a-nft
         markerhandler
