@@ -49,7 +49,7 @@
 
         var  mask = document.getElementById("mask");
         
-        // mask.style.display = "none";
+        mask.style.display = "none";
     }    
    })
    this.el.sceneEl.addEventListener('markerLost', (e) => { 
@@ -57,7 +57,7 @@
     console.log("Lost");
     var  mask = document.getElementById("mask");
         
-        // mask.style.display = "block";
+        mask.style.display = "block";
   })
  }
 });
@@ -75,8 +75,7 @@
         renderer="logarithmicDepthBuffer: true; precision: medium;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>  
         
-         <!-- <img id="mask" class="mask" alt="girl">     -->
-         <!-- <img id="mask" class="mask" src="./data/images/kb1.png" alt="girl">     --> 
+         <img id="mask" class="mask" src="./data/images/kb64.png" alt="keyboard">     
 
         
           
