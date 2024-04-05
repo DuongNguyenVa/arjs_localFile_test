@@ -62,14 +62,14 @@
 });
 </script>
 <body style='margin : 0px; overflow: hidden;'>
-  
+    <video width="240" height="240" loop autoplay dislay="block">
+        <source src="./data/videos/kb_video.mp4" type="video/mp4">
+      </video>
   <div class="arjs-loader">
     <div>Loading camera, please wait...</div>      
   </div> 
  
- <video width="240" height="240" loop autoplay dislay="block">
-                <source src="./data/videos/kb_video.mp4" type="video/mp4">
-              </video>
+
     <a-scene
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true; precision: medium;"
